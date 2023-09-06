@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCloseDialogViewUserData"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_baseline_close_24" />
+
+    <LinearLayout
+        android:id="@+id/group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/btnCloseDialogViewUserData"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorProcent10"
+            android:text="@string/hintAge"/>
+
+        <EditText
+            android:id="@+id/dialogTvVarsta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/border_blue"
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/group1"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorProcent10"
+            android:text="@string/tvHeight"/>
+
+        <EditText
+            android:id="@+id/dialogTvInaltime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/border_blue"
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/group2"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorProcent10"
+            android:text="@string/hintWeight"/>
+
+        <EditText
+            android:id="@+id/dialogTvGreutate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/border_blue"
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/group3"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/dialogTvNivel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorProcent10"
+            android:text="@string/tvYourActivityLevel"/>
+
+        <EditText
+            android:id="@+id/dialogTvNivelActiv2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/border_blue"
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+
+        <Spinner
+            android:id="@+id/dialogSpinnerActivityLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_bg2"
+            android:dropDownWidth="match_parent"
+            android:dropDownVerticalOffset="40dp"
+            android:padding="8dp"
+            android:popupBackground="#ffffff"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/group4"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorProcent10"
+            android:text="@string/tvYourGoal"/>
+
+        <EditText
+            android:id="@+id/dialogTvScop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/border_blue"
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <RadioGroup
+            android:id="@+id/dialogRgGoal"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_below="@id/dialogTvScop">
+
+            <RadioButton
+                android:id="@+id/dialogRbLose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorProcent10"
+                android:text="@string/rbLose"
+                android:textColor="@color/colorProcent10"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/dialogRbGain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorProcent10"
+                android:text="@string/rbGain"
+                android:textColor="@color/colorProcent10" />
+
+            <RadioButton
+                android:id="@+id/dialogRbMaintain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorProcent10"
+                android:text="@string/rbMaintain"
+                android:textColor="@color/colorProcent10" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/group5"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorProcent10"
+            android:text="@string/tvCZTE"/>
+
+        <EditText
+            android:id="@+id/dialogTvCzte"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/border_blue"
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+             />
+
+    </LinearLayout>
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btnEditUserData"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/group6"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="@string/btnEditati"-->
+<!--        android:background="@drawable/button_ripple_effect4"/>-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnEditUserData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group6"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ic_baseline_edit_24"
+        android:backgroundTint="@color/lila"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSaveUserModifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/group6"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/galbenDeschis"
+        app:srcCompat="@drawable/ic_baseline_save_24"
+        />
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btnSaveUserModifications"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_below="@id/group6"-->
+<!--        android:text="@string/btnSaveNewPad"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:background="@drawable/button_ripple_effect3"-->
+<!--        />-->
+
+</RelativeLayout>
+</ScrollView>

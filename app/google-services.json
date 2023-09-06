@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "833825140965",
+    "project_id": "movewave-b9331",
+    "storage_bucket": "movewave-b9331.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833825140965:android:4740f8493231566c91240c",
+        "android_client_info": {
+          "package_name": "com.example.movewave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833825140965-8kps8487dh6t1khpuk1uosstmuu2raav.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.movewave",
+            "certificate_hash": "bd780070f3ffeaf2b046c664d77d3524c32e1806"
+          }
+        },
+        {
+          "client_id": "833825140965-lrd45kmg55ml3tcdvke2l6vm8utevgji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrPMJLtPt_IQSoMbCvxUQt8rjUX2B44pA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833825140965-lrd45kmg55ml3tcdvke2l6vm8utevgji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

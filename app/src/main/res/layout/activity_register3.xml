@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterActivity3"
+    android:paddingTop="230dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/hintAge"
+        android:padding="10dp"
+        android:textColor="@color/colorProcent10"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvYourActivityLevel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/tvYourActivityLevel"
+        android:textColor="@color/colorProcent10"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/etAge"
+        app:layout_constraintStart_toStartOf="@id/etAge"
+        app:layout_constraintTop_toBottomOf="@id/etAge" />
+
+    <Spinner
+        android:id="@+id/spinnerActivityLevel"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_level_bg"
+        android:dropDownWidth="match_parent"
+        android:dropDownVerticalOffset="40dp"
+        android:padding="8dp"
+        android:popupBackground="#ffffff"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/tvYourActivityLevel"
+        app:layout_constraintStart_toStartOf="@+id/tvYourActivityLevel"
+        app:layout_constraintTop_toBottomOf="@+id/tvYourActivityLevel"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvYourGoal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/tvYourGoal"
+        android:textColor="@color/colorProcent10"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/spinnerActivityLevel"
+        app:layout_constraintStart_toStartOf="@id/spinnerActivityLevel"
+        app:layout_constraintTop_toBottomOf="@id/spinnerActivityLevel" />
+
+    <RadioGroup
+        android:id="@+id/rgGoal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/tvYourGoal"
+        app:layout_constraintStart_toStartOf="@id/tvYourGoal"
+        app:layout_constraintTop_toBottomOf="@id/tvYourGoal"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="450dp">
+
+        <RadioButton
+            android:id="@+id/rbLose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorProcent10"
+            android:text="@string/rbLose"
+            android:textColor="@color/colorProcent10" />
+
+        <RadioButton
+            android:id="@+id/rbGain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorProcent10"
+            android:text="@string/rbGain"
+            android:textColor="@color/colorProcent10" />
+
+        <RadioButton
+            android:id="@+id/rbMaintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorProcent10"
+            android:text="@string/rbMaintain"
+            android:textColor="@color/colorProcent10" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_degrade_bg"
+        android:clickable="true"
+        android:text="@string/btnSumbit"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/rgGoal"
+        app:layout_constraintStart_toStartOf="@+id/rgGoal"
+        app:layout_constraintTop_toBottomOf="@+id/rgGoal"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

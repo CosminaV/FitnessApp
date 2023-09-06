@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/tvWorkoutName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/imgBtnEdit"
+            android:text="hello"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorProcent10" />
+
+        <TextView
+            android:id="@+id/tvWorkoutNrEx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/hintColor"
+            android:textSize="15sp"
+            android:text="nr exercitii"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tvWorkoutName"
+      />
+
+        <TextView
+            android:id="@+id/tvWorkoutStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/hintColor"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tvWorkoutNrEx"
+            />
+
+        <TextView
+            android:id="@+id/tvWorkoutDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/hintColor"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tvWorkoutStatus"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imgBtnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_below="@id/tvWorkoutName"
+            android:layout_toStartOf="@+id/imgBtnEdit"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/start_button"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imgBtnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_below="@id/tvWorkoutName"
+            android:layout_toStartOf="@+id/imgBtnDelete"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/edit_button_svg"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imgBtnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/trash_can_svg"
+            android:layout_below="@id/tvWorkoutName"
+            android:backgroundTint="@android:color/transparent"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

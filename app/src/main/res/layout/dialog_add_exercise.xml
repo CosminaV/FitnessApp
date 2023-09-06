@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Spinner
+        android:id="@+id/dialogSpinnerExercises"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/spinner_level_bg"
+        android:dropDownWidth="match_parent"
+        android:dropDownVerticalOffset="40dp"
+        android:padding="8dp"
+        android:popupBackground="#ffffff"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dialogEtNrSets"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="20dp"
+        android:ems="10"
+        android:hint="@string/hintNrSets"
+        android:padding="10dp"
+        android:textColor="@color/colorProcent10"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="@id/dialogSpinnerExercises"
+        app:layout_constraintStart_toStartOf="@id/dialogSpinnerExercises"
+        app:layout_constraintTop_toBottomOf="@id/dialogSpinnerExercises" />
+
+    <EditText
+        android:id="@+id/dialogEtNrReps"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="20dp"
+        android:ems="10"
+        android:hint="@string/hintNrReps"
+        android:padding="10dp"
+        android:textColor="@color/colorProcent10"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="@id/dialogEtNrSets"
+        app:layout_constraintStart_toStartOf="@id/dialogEtNrSets"
+        app:layout_constraintTop_toBottomOf="@id/dialogEtNrSets" />
+
+    <TextView
+        android:id="@+id/dialogTvRestTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tvRestTime"
+        android:textAlignment="center"
+        android:textColor="@color/colorProcent10"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/dialogEtNrReps"
+        app:layout_constraintTop_toBottomOf="@id/dialogEtNrReps" />
+
+    <TextView
+        android:id="@+id/dialogTvRestTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorProcent10"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/dialogEtNrReps"
+        app:layout_constraintStart_toEndOf="@+id/dialogTvRestTime"
+        app:layout_constraintTop_toBottomOf="@id/dialogEtNrReps" />
+
+    <SeekBar
+        android:id="@+id/dialogSbRestTime"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        app:layout_constraintEnd_toEndOf="@+id/dialogEtNrReps"
+        app:layout_constraintStart_toStartOf="@+id/dialogEtNrReps"
+        app:layout_constraintTop_toBottomOf="@id/dialogTvRestTime"
+        android:max="12"
+        android:progress="1"
+        android:thumbTint="@color/colorProcent30"
+        android:progressTint="@color/colorProcent30"
+        android:progressBackgroundTint="@color/lila"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialogBtnSaveExercise"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_degrade_bg"
+        android:clickable="true"
+        android:text="@string/btnSaveExercise"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/dialogSbRestTime"
+        app:layout_constraintStart_toStartOf="@+id/dialogSbRestTime"
+        app:layout_constraintTop_toBottomOf="@+id/dialogSbRestTime" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnInchide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/btnDialogInchide"
+        android:background="@drawable/button_ripple_effect3"
+        app:layout_constraintTop_toBottomOf="@id/dialogBtnSaveExercise"
+        app:layout_constraintStart_toEndOf="@id/dialogBtnSaveExercise"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

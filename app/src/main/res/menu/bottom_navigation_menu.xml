@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:icon="@drawable/lightning"
+        android:id="@+id/trainingBtn" android:title="@string/navBarTraining"/>
+    <item android:icon="@drawable/nutrition"
+        android:id="@+id/nutritionBtn" android:title="@string/navBarNutrition"/>
+<!--    <item android:icon="@drawable/ic_baseline_bar_chart_24"-->
+<!--        android:id="@+id/reportsBtn" android:title="Reports"/>-->
+    <item android:icon="@drawable/profile"
+        android:id="@+id/profileBtn" android:title="@string/navBarProfile"/>
+</menu>

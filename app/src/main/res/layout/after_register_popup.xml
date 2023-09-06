@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:gravity="end"
+    android:background="@drawable/border_with_shadow_bg"
+    android:elevation="70dp"
+    android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvThankYouForRegistering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorProcent10"/>
+
+        <TextView
+            android:id="@+id/tvClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvClose"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:textColor="@color/colorProcent30"
+            android:textAlignment="textEnd"/>
+
+</LinearLayout>
+
+

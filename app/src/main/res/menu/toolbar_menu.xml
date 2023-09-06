@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/addWorkout"
+        android:icon="@drawable/add_square_svgrepo_com"
+        android:title="@string/btnAddWorkout"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/viewExercises"
+        android:icon="@drawable/ic_baseline_grid_view_24"
+        android:title="@string/btnViewExercises"
+        app:showAsAction="ifRoom"/>
+</menu>

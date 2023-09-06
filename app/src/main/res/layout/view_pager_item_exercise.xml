@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+<!--            app:cardCornerRadius="12dp"-->
+<!--            app:cardElevation="10dp">-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tvExerciseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorProcent10"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivExerciseVP"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:layout_below="@id/tvExerciseName"/>
+
+                <TextView
+                    android:id="@+id/tvNrSerii"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivExerciseVP"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/tvRepetari"
+                    android:textColor="@color/colorProcent10"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvRepetari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivExerciseVP"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorProcent10"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvDescriere"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/tvNrSerii"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_toStartOf="@id/tvPauza"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16sp"-->
+<!--                    />-->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVeziDesccriere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPauza"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/button_ripple_effect"
+                    android:text="@string/btnVeziDescriereaExercitiului"/>
+
+                <TextView
+                    android:id="@+id/tvPauza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvRepetari"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorProcent10"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clExercise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnVeziDesccriere"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSchimbaGreutate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/button_ripple_effect"
+                    android:text="@string/btnAdaugaGreutate"/>
+
+                <TextView
+                    android:id="@+id/tvGreutateCurenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="@id/btnSchimbaGreutate"
+                    app:layout_constraintStart_toEndOf="@id/btnSchimbaGreutate"
+                    app:layout_constraintBottom_toBottomOf="@id/btnSchimbaGreutate"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorProcent10" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutExGroupButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/clExercise"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/startStopButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_ripple_effect2"
+                        android:text="@string/startExercise"
+                        android:textColor="@color/black"
+                    />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/imgBtnEditEx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/edit_button_svg" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/imgBtnDeleteEx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/trash_can_svg"
+                        android:backgroundTint="@color/white"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@id/linearLayoutExGroupButtons"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_timer_24"/>
+
+                    <TextView
+                        android:id="@+id/tvTimeCounter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="00:00"
+                        android:textSize="25sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvRestTimeRemained"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/linearLayoutTimer"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorProcent10"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

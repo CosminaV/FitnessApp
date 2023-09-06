@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/dialogEtGreutate"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="20dp"
+        android:ems="10"
+        android:hint="Greutate folosită (în kg)"
+        android:padding="10dp"
+        android:textColor="@color/colorProcent10"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialogBtnSaveGreutate"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_degrade_bg"
+        android:clickable="true"
+        android:text="@string/btnSaveNewPad"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/dialogEtGreutate"
+        app:layout_constraintStart_toStartOf="@+id/dialogEtGreutate"
+        app:layout_constraintTop_toBottomOf="@+id/dialogEtGreutate" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialogBtnInchide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/btnDialogInchide"
+        android:background="@drawable/button_ripple_effect3"
+        app:layout_constraintTop_toBottomOf="@id/dialogBtnSaveGreutate"
+        app:layout_constraintStart_toEndOf="@id/dialogBtnSaveGreutate"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

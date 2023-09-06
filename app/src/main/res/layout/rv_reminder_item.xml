@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvZi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="zi"
+            android:textSize="20sp"
+            android:textColor="@color/hintColor"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:id="@+id/tvOra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ora"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_below="@id/tvZi"
+            />
+
+        <View
+            android:id="@+id/linieVerticala"
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            android:background="@color/hintColor"
+            android:layout_toEndOf="@id/tvZi"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/rvTvReminderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:text="test"
+            android:ellipsize="end"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/linieVerticala"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorProcent10" />
+
+        <TextView
+            android:id="@+id/rvTvReminderDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/hintColor"
+            android:textSize="15sp"
+            android:text="test"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/linieVerticala"
+            android:layout_below="@id/rvTvReminderTitle"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imgBtnDeleteReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvTvReminderDescription"
+            android:src="@drawable/trash_can_svg"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/rvTvReminderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/hintColor"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="status"
+            android:layout_below="@id/rvTvReminderDescription"
+            android:layout_alignParentEnd="true"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

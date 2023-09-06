@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterActivity2"
+    android:paddingTop="230dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRegister3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvCompleteProfile"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tvCompleteProfile"
+            android:textAlignment="center"
+            android:textColor="@color/colorProcent10"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHelpUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvHelpUs"
+            android:textAlignment="center"
+            android:textColor="@color/colorProcent10"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/hintFullName"
+        android:padding="10dp"
+        android:textColor="@color/colorProcent10"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="@id/linearLayoutRegister3"
+        app:layout_constraintStart_toStartOf="@id/linearLayoutRegister3"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutRegister3" />
+
+    <RadioGroup
+        android:id="@+id/rgSex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="450dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvYourSex"
+        app:layout_constraintStart_toStartOf="@id/tvYourSex"
+        app:layout_constraintEnd_toEndOf="@id/tvYourSex">
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorProcent10"
+            android:text="@string/rbFemale"
+            android:textColor="@color/colorProcent10"/>
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorProcent10"
+            android:text="@string/rbMale"
+            android:textColor="@color/colorProcent10"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvYourSex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/tvYourSex"
+        android:textColor="@color/colorProcent10"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@id/etName"
+        app:layout_constraintStart_toStartOf="@id/etName"
+        app:layout_constraintTop_toBottomOf="@id/etName" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRegister4"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/rgSex"
+        app:layout_constraintStart_toStartOf="@id/rgSex"
+        app:layout_constraintEnd_toEndOf="@id/rgSex">
+
+        <TextView
+            android:id="@+id/tvYourWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvHeight"
+            android:textColor="@color/colorProcent10"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_gravity="center"/>
+
+        <NumberPicker
+        android:id="@+id/npHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvCm"
+            android:textColor="@color/colorProcent10"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/hintWeight"
+        android:padding="10dp"
+        android:textColor="@color/colorProcent10"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="@id/linearLayoutRegister4"
+        app:layout_constraintStart_toStartOf="@id/linearLayoutRegister4"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutRegister4" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorProcent30"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="@+id/etWeight"
+        app:layout_constraintTop_toBottomOf="@+id/etWeight"
+        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

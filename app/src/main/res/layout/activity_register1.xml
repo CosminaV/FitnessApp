@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterActivity1"
+    android:background="@color/colorProcent60">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <TextView
+        android:id="@+id/tvDontHaveAccount"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tvHeyThere"
+        android:textAlignment="center"
+        android:textColor="@color/colorProcent10"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvCreateAccount"
+        android:textColor="@color/colorProcent10"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etEmailRegister"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/etHintEmail"
+        android:padding="10dp"
+        android:textColor="@color/colorProcent10"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="@id/linearLayoutRegister"
+        app:layout_constraintStart_toStartOf="@id/linearLayoutRegister"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutRegister" />
+
+    <EditText
+        android:id="@+id/etPwdRegister"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableEnd="@drawable/ic_baseline_visibility_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/etHintPwd"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/colorProcent10"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="@id/etEmailRegister"
+        app:layout_constraintStart_toStartOf="@id/etEmailRegister"
+        app:layout_constraintTop_toBottomOf="@id/etEmailRegister" />
+
+    <EditText
+        android:id="@+id/etConfirmPwd"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableEnd="@drawable/ic_baseline_visibility_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/hintConfirmPwd"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/colorProcent10"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="@id/etPwdRegister"
+        app:layout_constraintStart_toStartOf="@id/etPwdRegister"
+        app:layout_constraintTop_toBottomOf="@id/etPwdRegister" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_degrade_bg"
+        android:text="@string/btnRegister"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/etConfirmPwd"
+        app:layout_constraintStart_toStartOf="@+id/etConfirmPwd"
+        app:layout_constraintTop_toBottomOf="@+id/etConfirmPwd" />
+
+    <TextView
+        android:id="@+id/tvOrRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/or"
+        android:textColor="@color/colorProcent10"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRegister2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/etConfirmPwd"
+        app:layout_constraintStart_toStartOf="@+id/etConfirmPwd"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrRegister">
+
+        <TextView
+            android:id="@+id/tvAlreadyHaveAcc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tvAlreadyHaveAcc"
+            android:textColor="@color/colorProcent10"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvLogin"
+            android:textColor="@color/colorProcent30"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/dialogTvNrSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorProcent10"
+        android:text="@string/hintNrSets"/>
+
+    <EditText
+        android:id="@+id/dialog2EtNrSets"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="20dp"
+        android:ems="10"
+        android:hint="@string/hintNrSets"
+        android:padding="10dp"
+        android:textColor="@color/colorProcent10"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialogTvNrSets" />
+
+    <TextView
+        android:id="@+id/dialogTvNrReps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dialog2EtNrSets"
+        app:layout_constraintStart_toStartOf="@id/dialogTvNrSets"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorProcent10"
+        android:text="@string/hintNrReps"/>
+
+    <EditText
+        android:id="@+id/dialog2EtNrReps"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="20dp"
+        android:ems="10"
+        android:hint="@string/hintNrReps"
+        android:padding="10dp"
+        android:textColor="@color/colorProcent10"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="@id/dialog2EtNrSets"
+        app:layout_constraintStart_toStartOf="@id/dialog2EtNrSets"
+        app:layout_constraintTop_toBottomOf="@id/dialogTvNrReps" />
+
+    <TextView
+        android:id="@+id/dialog2TvRestTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tvRestTime"
+        android:textAlignment="center"
+        android:textColor="@color/colorProcent10"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/dialogTvNrReps"
+        app:layout_constraintTop_toBottomOf="@id/dialog2EtNrReps" />
+
+    <TextView
+        android:id="@+id/dialog2TvRestTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorProcent10"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/dialog2EtNrReps"
+        app:layout_constraintStart_toEndOf="@+id/dialog2TvRestTime"
+        app:layout_constraintTop_toBottomOf="@id/dialog2EtNrReps" />
+
+    <SeekBar
+        android:id="@+id/dialog2SbRestTime"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        app:layout_constraintEnd_toEndOf="@+id/dialog2EtNrReps"
+        app:layout_constraintStart_toStartOf="@+id/dialog2EtNrReps"
+        app:layout_constraintTop_toBottomOf="@id/dialog2TvRestTime"
+        android:max="12"
+        android:progress="1"
+        android:thumbTint="@color/colorProcent30"
+        android:progressTint="@color/colorProcent30"
+        android:progressBackgroundTint="@color/lila"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialog2BtnSaveExercise"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_degrade_bg"
+        android:clickable="true"
+        android:text="@string/btnSaveNewPad"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/dialog2SbRestTime"
+        app:layout_constraintStart_toStartOf="@+id/dialog2SbRestTime"
+        app:layout_constraintTop_toBottomOf="@+id/dialog2SbRestTime" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnInchide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/btnDialogInchide"
+        android:background="@drawable/button_ripple_effect"
+        app:layout_constraintTop_toBottomOf="@id/dialog2BtnSaveExercise"
+        app:layout_constraintStart_toEndOf="@id/dialog2BtnSaveExercise"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

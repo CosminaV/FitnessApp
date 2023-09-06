@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.NutritionFragment"
+    android:padding="10dp"
+    android:background="@color/colorProcent60">
+
+    <TextView
+        android:id="@+id/tvAnuntGrafic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/tvGrafic"
+        android:textStyle="italic|bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorProcent10"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChartMacros"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAnuntGrafic" />
+
+<!--    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+<!--        android:id="@+id/fabAddFab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        android:backgroundTint="@color/lila"-->
+<!--        android:text="@string/actiuni"-->
+<!--        android:gravity="center_vertical"-->
+<!--        app:icon="@drawable/ic_baseline_add_circle_outline_24" />-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fabViewUserData"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/fabAddFab"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/fabAddFab"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        android:backgroundTint="@color/lila"-->
+<!--        android:src="@drawable/view_icon" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvViewUserData"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/tvViewUserData"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/fabViewUserData"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/fabViewUserData"-->
+<!--        app:layout_constraintTop_toTopOf="@id/fabViewUserData"-->
+<!--        android:textColor="@color/black"/>-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fabEditUserData"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/fabViewUserData"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/fabAddFab"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        android:backgroundTint="@color/lila"-->
+<!--        android:src="@drawable/edit_button2_svg" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvEditUserData"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/tvEditUserData"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/fabEditUserData"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/fabEditUserData"-->
+<!--        app:layout_constraintTop_toTopOf="@id/fabEditUserData"-->
+<!--        android:textColor="@color/black"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyStatisticsActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvSelecteazaAntrenament"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="@string/tvSelecteazaAntrenament"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFiltreazaAntrenamente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_ripple_effect"
+        android:text="@string/btnFiltreaza"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSelecteazaAntrenament"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFilterWorkoutsButtons"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/tvSelecteazaAntrenament"
+        app:layout_constraintStart_toStartOf="@id/tvSelecteazaAntrenament"
+        app:layout_constraintTop_toBottomOf="@id/btnFiltreazaAntrenamente"
+        android:layout_marginTop="10dp"
+        android:weightSum="3">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFilterUpperBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_ripple_effect"
+            android:text="@string/rbUpperBody"
+            android:layout_marginEnd="5dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFilterLowerBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_ripple_effect"
+            android:text="@string/rbLowerBody" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFilterCore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_ripple_effect"
+            android:text="@string/rbCore" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/secondRvWorkouts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="@id/tvSelecteazaAntrenament"
+        app:layout_constraintStart_toStartOf="@id/tvSelecteazaAntrenament"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutFilterWorkoutsButtons"
+        android:layout_marginTop="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
